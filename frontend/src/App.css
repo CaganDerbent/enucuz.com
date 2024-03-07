@@ -1,0 +1,263 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  
+  }
+
+  #root{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+body{
+  background: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #ffa516;
+  border-right: none;
+  padding: 5px;
+ 
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: gray;
+}
+
+.searchTerm:focus{
+  color: gray;
+
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #ffa516;
+  background: #ffa516;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+.searchButton:hover{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 50%;
+  margin-top: 80px;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+    width: 100%;
+    height: 40px;
+    color: #ffa516;
+    background-color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+ 
+  }
+  
+  .navbar ul li{
+    text-decoration: none;
+    list-style: none;
+    
+  }
+  
+  .link{
+    color: whitesmoke;
+    text-decoration: none;
+  }
+
+  .body{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+  }
+
+  .container{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+ 
+
+  .product{
+    position: relative;
+    width: 300px;
+    height: 470px;
+    background-color:rgb(230, 226, 226);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    text-decoration: none;
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 0.2s;
+  }
+
+  @media screen and (min-width:1435px){
+    .product:hover{
+      filter: brightness(70%);
+    }
+    h3{
+      font-size: 16px;
+    }
+    
+  }
+
+  @media screen and (max-width:1435px){
+    .product:hover{
+      filter: brightness(70%);
+    }
+
+    .product{
+      width: 200px;
+      height: 380px;
+      font-size: 12px;
+      margin: 5px;
+    }
+
+    .product .imagecont{
+      height: 150px;
+    }
+    #q{
+      font-size: 16px;
+    }
+    .header{
+      font-size: 20px;
+      text-align: center;
+    }
+    .wrap{
+      width: 70%;
+      margin-top: 80px;
+    }
+
+    .body{
+      width: 90%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+  
+    }
+
+   
+    
+  }
+
+  @media screen and (max-width:700px){
+
+    .product{
+      width: 134px;
+      height: 380px;
+      font-size: 12px;
+      margin: 5px;
+    }
+    .product p {
+      font-size: 12px;
+    }
+    .product h3{
+      font-size: 12px;
+    }
+    .site img{
+      width: 120px !important;
+      height: 40px !important;
+      }
+   
+    
+ 
+    
+  }
+ 
+
+
+
+
+  .imagecont{
+    width: 100%;
+    height: 250px;
+
+    background-color: blue;
+  }
+  .imagecont img{
+    width: 100%;
+    height: 100%;
+  }
+
+  .site{
+    width: 100%;
+    height: 40px;
+ 
+  }
+
+  .header{
+    display: block !important;
+    margin-top: 40px !important;
+    text-align: center !important;
+  }
+
+  .site img{
+  width: 200px;
+  height: 30px;
+  }
+
+  .site{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 8px;
+  }
+  .productinfo{
+    padding: 8px;
+    text-align: start;
+ 
+  }
+ 
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: 
+    radial-gradient(farthest-side,#ffa516 94%,#0000) top/8px 8px no-repeat,
+    conic-gradient(#0000 30%,#ffa516);
+  -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 8px),#000 0);
+  animation: l13 1s infinite linear;
+}
+@keyframes l13{ 
+  100%{transform: rotate(1turn)}
+}
+
+h1 .link{
+  font-size: 32px !important;
+}
