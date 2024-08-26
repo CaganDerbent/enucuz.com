@@ -57,7 +57,7 @@ const Main = () => {
     return (
         <div className="body">
 
-            <h1 className="header">hepsiburada.com, trendyol.com ve n11.com sitelerindeki önerilen ve en ucuz ürünleri bul !</h1>
+            <h1 className="header">hepsiburada.com ve n11.com sitelerindeki önerilen en ucuz ürünleri bul !</h1>
             
             <div className="wrap">
    <div className="search">
